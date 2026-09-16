@@ -6,6 +6,7 @@ const DB = {
   memo:      { title:'Memo Pad',         body:'브라우저 로컬에 메모를 저장/복원합니다.' }
 };
 
+@type {import('./$types').PageServerLoad}
 export function load({ params }) {
   const key = params.slug;
   const item = DB[key];
